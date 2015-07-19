@@ -6,7 +6,7 @@
 # catalog-version 3.6
 Name:		texlive-aiaa
 Version:	3.6
-Release:	9
+Release:	10
 Summary:	Typeset AIAA conference papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aiaa
