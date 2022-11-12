@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/aiaa
-# catalog-date 2006-09-12 13:40:13 +0200
-# catalog-license lppl
-# catalog-version 3.6
 Name:		texlive-aiaa
-Version:	3.6
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Typeset AIAA conference papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aiaa
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.r15878.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.doc.r15878.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.source.r15878.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ guidelines of the American Institute of Aeronautics and
 Astronautics (AIAA).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -73,25 +67,11 @@ Astronautics (AIAA).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.6-2
-+ Revision: 749152
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.6-1
-+ Revision: 717805
-- texlive-aiaa
-- texlive-aiaa
-- texlive-aiaa
-- texlive-aiaa
-- texlive-aiaa
-
