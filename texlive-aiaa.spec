@@ -5,9 +5,9 @@ Summary:	Typeset AIAA conference papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aiaa
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.r15878.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.doc.r15878.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.source.r15878.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
