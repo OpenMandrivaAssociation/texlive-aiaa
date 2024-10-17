@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Typeset AIAA conference papers
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aiaa
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/aiaa
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aiaa.doc.r%{version}.tar.xz
